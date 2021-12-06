@@ -1,0 +1,64 @@
+{% extends "RespoFiliere/index.html" %}
+
+{% block content %}
+<div class ="container">
+  <br>
+  <div class="row">
+    <h2 class="align-center" style="color:#900C3F">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Formulaire d'incription de l'enseignant</h2>
+  </div>
+  <br>
+
+  <div class="col-9">
+    <form method="POST" class="post-form" action="ajoutEns">
+
+      {% csrf_token %}
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nom" style="color:#900C3F"><b>Nom</b></label>
+      {{ form.nom }}
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="prenom" style="color:#900C3F"><b>Prénom</b></label>
+      {{ form.prenom }}
+    </div>
+  </div><br>
+  <div class="form-group">
+    <label for="adresse" style="color:#900C3F"><b>Adresse</b></label>
+    {{ form.adresse }}
+  </div><br>
+  
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="numTel" style="color:#900C3F"><b>Numéro de téléphone</b></label>
+    {{ form.numTel }}
+  </div>
+  <div class="form-group col-md-6">
+    <label for="email" style="color:#900C3F"><b>Email</b></label>
+    {{ form.email }}
+  </div>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="dateEntree" style="color:#900C3F"><b>Date d'entrée</b></label>
+    {{ form.dateEntree }}
+  </div>
+  <div class="form-group col-md-4">
+    <label for="filiere" style="color:#900C3F"><b>Filière</b></label>
+      {{ form.filiere }}
+    </div>
+  </div> <br>
+  
+  
+    
+                                        <button type="submit" class="btn btn-dark"> <span
+                                        class="fa fa-send" style="color:#4f4;"></span> 
+                                            Ajouter
+                                        </button>
+                                    
+    </div>                            
+</form>
+  </div>
+    
+  </div>
+</div>
+    {%endblock%}

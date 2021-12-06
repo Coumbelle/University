@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Université</title>
+    <!-- MDB icon -->
+    <!--<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />-->
+    <!-- Font Awesome -->
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />-->
+    <!-- Google Fonts Roboto -->
+    <!--<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />-->
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}" />
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Université &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </a>
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="button"><b>liste Classe </b> </a>
+            <div class="dropdown-menu" style="color:#900C3F">
+              <a class="dropdown-item" href="#">HTML et CSS</a>
+              <a class="dropdown-item" href="#">JavaScript</a>
+              <a class="dropdown-item" href="#">PHP et MySQL</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="#"><b>&nbsp &nbsp &nbspDéconnexion</b></a></li>
+          <!--<li class="nav-item"><a class="nav-link " href="#">Contact</a></li>-->
+        
+        </ul>
+      </nav>
+</header>
+
+
+
+<div class ="container">
+  <br>
+  <div class="row">
+    <h2 class="align-center" style="color:#900C3F">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Formulaire d'ajout d'une filière</h2>
+  </div>
+  <br>
+
+  <div class="col-9">
+    <form>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nomFiliere" style="color:#900C3F"><b>Nom de la filière</b></label>
+      <input type="text" class="form-control" id="nomFiliere" placeholder="Saisir la filière">
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="nomNiveau" style="color:#900C3F"><b>Niveau</b></label>
+      <input type="text" class="form-control" id="nomNiveau" placeholder="Donner le Niveau">
+    </div>
+  </div><br>
+  <div class="form-group col-md-6">
+    <label for="numNiveau" style="color:#900C3F"><b>Numéro de Niveau</b></label>
+    <input type="number" class="form-control" id="numNiveau" placeholder="">
+  </div><br>
+  
+
+  
+    
+                                        <button type="submit" class="btn btn-dark"> <span
+                                        class="fa fa-send" style="color:#4f4;"></span> 
+                                            Ajouter
+                                        </button>
+                                    
+    </div>                            
+</form>
+  </div>
+    
+  </div>
+</div>
+    <!-- MDB -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Université</title>
+    <!-- MDB icon -->
+    <!--<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />-->
+    <!-- Font Awesome -->
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />-->
+    <!-- Google Fonts Roboto -->
+    <!--<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />-->
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css'%}" />
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Université &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </a>
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="button"><b>liste Classe </b> </a>
+            <div class="dropdown-menu" style="color:#900C3F">
+              <a class="dropdown-item" href="#">HTML et CSS</a>
+              <a class="dropdown-item" href="#">JavaScript</a>
+              <a class="dropdown-item" href="#">PHP et MySQL</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="#"><b>&nbsp &nbsp &nbspDéconnexion</b></a></li>
+          <!--<li class="nav-item"><a class="nav-link " href="#">Contact</a></li>-->
+        
+        </ul>
+      </nav>
+</header>
+
+
+
+<div class ="container">
+  <br>
+  <div class="row">
+    <h2 class="align-center" style="color:#900C3F">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Formulaire d'incription de l'étudiant</h2>
+  </div>
+  <br>
+
+  <div class="col-9">
+    <form>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nom" style="color:#900C3F"><b>Nom</b></label>
+      <input type="nom" class="form-control" id="nom" placeholder="Saisir le nom de l'étudiant">
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="prenom" style="color:#900C3F"><b>Prénom</b></label>
+      <input type="prenom" class="form-control" id="prenom" placeholder="Prénom">
+    </div>
+  </div><br>
+  <div class="form-group">
+    <label for="adresse" style="color:#900C3F"><b>Adresse</b></label>
+    <input type="text" class="form-control" id="adresse" placeholder="Saisir l'adresse de l'étudiant">
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="dateNaiss" style="color:#900C3F"><b>Date de naissance</b></label>
+    <input type="Date" class="form-control" id="dateNaiss" placeholder="Date de naissance">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="lieuNaiss" style="color:#900C3F"><b>Lieu de naissance</b></label>
+    <input type="text" class="form-control" id="lieuNaiss" placeholder="Lieu de naissance">
+  </div>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="numTel" style="color:#900C3F"><b>Numéro de téléphone</b></label>
+    <input type="text" class="form-control" id="numTel" placeholder="Saisir le numéro de téléphone de l'étudiant ">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="email" style="color:#900C3F"><b>Email</b></label>
+    <input type="text" class="form-control" id="email" placeholder="Saisir l'email de l'étudiant ">
+  </div>
+  </div><br>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nomParent" style="color:#900C3F"><b>Nom Parent/Tuteur</b></label>
+      <input type="nom" class="form-control" id="nom" placeholder="Saisir le nom de l'étudiant">
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="prenomParent" style="color:#900C3F"><b>Prénom Parent/Tuteur </b></label>
+      <input type="prenom" class="form-control" id="prenom" placeholder="Prénom">
+    </div>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="numTelParent" style="color:#900C3F"><b>Numéro de téléphone parent/tuteur</b></label>
+    <input type="text" class="form-control" id="numTelParent" placeholder="Saisir le numéro de téléphone du parent ">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="nomFilière" style="color:#900C3F"><b>Filière</b></label>
+      <select class="custom-select d-block w-100" id="nomFilière" name='nomFilière' required>
+            <option><b>#</b></option>
+            <option><b>#</b></option>
+            <option><b>#</b></option>
+            <option><b>#</b></option>
+            <option><b>#</b></option>
+            <option><b>"</b></option>
+      </select>
+    </div>
+  </div>
+  </div>
+  <br>
+    <table>
+                        <tr></tr>
+                            <tr>
+                            <br><td>
+                                    <div class="col-md-2 col-md-offset-4">
+                                        <button type="submit" class="btn btn-dark"> <span
+                                        class="fa fa-send" style="color:#4f4;"></span> 
+                                            Ajouter
+                                        </button>
+                                    </div>
+                                </td>
+                                <td> <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p></td>
+                                <td>
+                                    <div class="col-md-3 col-md-offset-2">
+                                        <a class="btn btn-danger"  href="#">
+                                            Carte Etudiant
+                                        </a>
+                                    </div>
+                                <td>
+                            </tr>
+                        </table>
+                        
+</form>
+  </div>
+    
+  </div>
+</div>
+    <!-- MDB -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>

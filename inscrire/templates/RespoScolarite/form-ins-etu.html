@@ -1,0 +1,114 @@
+{% extends "RespoScolarite/index.html" %}
+
+{% block content %}
+{% load static %}
+<div class ="container">
+  <br>
+  <div class="row">
+
+    <h2 class="align-center" style="color:#900C3F">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Formulaire d'incription de l'étudiant</h2>
+  </div>
+  <br>
+  <p> {{ text }}</p>
+  <br>
+  <div class="col-9">
+    <form method="POST" class="post-form" action="ajoutEtu">
+      {% csrf_token %}
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nom" style="color:#900C3F"><b>Nom</b></label>
+      {{ form.nom }}
+      <span class ="invaled-feedback">le nom est obligatoire</span>
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="prenom" style="color:#900C3F"><b>Prénom</b></label>
+      {{ form.prenom }}
+      <span class ="invaled-feedback">le prénom est obligatoire</span>
+    </div>
+  </div><br>
+  <div class="form-group">
+    <label for="adresse" style="color:#900C3F"><b>Adresse</b></label>
+    {{ form.adresse }}
+    <span class ="invaled-feedback">le nom est obligatoire</span>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="dateNaiss" style="color:#900C3F"><b>Date de naissance</b></label>
+    {{ form.dateNaiss }}
+    <span class ="invaled-feedback">Saisir la date de naissance</span>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="lieuNaiss" style="color:#900C3F"><b>Lieu de naissance</b></label>
+    {{ form.lieuNaiss }}
+    <span class ="invaled-feedback">Saisir le lieu de naissance</span>
+  </div>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="numTel" style="color:#900C3F"><b>Numéro de téléphone</b></label>
+    {{ form.numTel }}
+    <span class ="invaled-feedback">Saisir le numéro de téléphone de l'étudiant</span>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="email" style="color:#900C3F"><b>Email</b></label>
+    {{ form.email }}
+    <span class ="invaled-feedback">Saisir  l'adresse élecronique</span>
+  </div>
+  </div><br>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nomParent" style="color:#900C3F"><b>Nom Parent/Tuteur</b></label>
+      <input type="text" class="form-control" id="nom" placeholder="Saisir le nom de l'étudiant">
+      <span class ="invaled-feedback">le nom du Parent/Tuteur  est obligatoire</span>
+    </div><br>
+    <div class="form-group col-md-6">
+      <label for="prenomParent" style="color:#900C3F"><b>Prénom Parent/Tuteur </b></label>
+      <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+      <span class ="invaled-feedback">le prénom du Parent/Tuteur est obligatoire</span>
+    </div>
+  </div><br>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="numTelParent" style="color:#900C3F"><b>Numéro de téléphone parent/tuteur</b></label>
+    <input type="text" class="form-control" id="numTelParent" placeholder="Saisir le numéro de téléphone du parent ">
+    <span class ="invaled-feedback">le numéro de téléphone est obligatoire</span>
+  </div>
+  <div class="form-group col-md-6">
+    <!--<label for="nomFilière" style="color:#900C3F"><b>Filière</b></label>
+      {{ form.filiere}}
+    </div>-->
+  </div>
+  </div>
+  <br>
+    <table>
+                        <tr></tr>
+                            <tr>
+                            <br><td>
+                                    <div class="col-md-2 col-md-offset-4">
+                                        <button type="submit" class="btn btn-dark"> <span
+                                        class="fa fa-send" style="color:#4f4;"></span> 
+                                            Ajouter
+                                        </button>
+                                    </div>
+                                </td>
+                                <td> <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p></td>
+                                <td>
+                                    <div class="col-md-3 col-md-offset-2">
+                                        <a class="btn btn-danger"  href="#">
+                                            Carte Etudiant
+                                        </a>
+                                    </div>
+                                <td>
+                            </tr>
+                        </table>
+                        
+</form>
+  </div>
+    
+  </div>
+</div>
+    <!-- MDB -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+{% endblock %}

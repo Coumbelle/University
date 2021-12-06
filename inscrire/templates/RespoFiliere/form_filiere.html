@@ -1,0 +1,40 @@
+{% extends "RespoFiliere/index.html" %}
+
+{% block content %}
+{% load static %}
+
+<div class ="container">
+  <br>
+  <div class="row">
+    <h2 class="align-center" style="color:#900C3F">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Formulaire d'ajout d'une filière</h2>
+  </div>
+  <br>
+
+  <div class="col-9">
+    <form method="POST" class="post-form" action="ajoutFil">
+      {% csrf_token %}
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="nomFiliere" style="color:#900C3F"><b>Nom de la filière</b></label><br>
+      <div class="form-control">
+        {{ form.nomFiliere }} 
+      </div>
+    </div> 
+  </div><br>
+   <br>
+  
+
+  
+    
+                                        <button type="submit" class="btn btn-dark"> <span
+                                        class="fa fa-send" style="color:#4f4;"></span> 
+                                            Ajouter
+                                        </button>
+                                    
+    </div>                            
+</form>
+  </div>
+    
+  </div>
+</div>
+{% endblock %}

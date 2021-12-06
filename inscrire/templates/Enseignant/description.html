@@ -1,0 +1,25 @@
+ 
+{% extends "Enseignant/index.html" %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+	<br>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-8">
+		 	<div class="form-group">
+		       <label for="bio"><h3 class="">Description de l'EC</h3></label>
+		       <textarea class="form-control" id="description" rows="7"></textarea>
+		    </div><br>
+		    <div class="col-md-2 col-md-offset-4">
+		        <button type="submit" class="btn btn-dark"> <span
+		        class="fa fa-send" style="color:#4f4;"></span> 
+		            Ajouter
+		        </button>
+		    </div>
+	    </div>
+    </div>
+ </form>
+ {% endblock %}
